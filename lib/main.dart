@@ -18,6 +18,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       title: 'Pidgin',
       home: Authentication(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
