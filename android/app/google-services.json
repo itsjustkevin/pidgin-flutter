@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1012632615221",
+    "project_id": "pidgin-2e623",
+    "storage_bucket": "pidgin-2e623.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1012632615221:android:ad6cb5f94e306868a6b47c",
+        "android_client_info": {
+          "package_name": "com.example.pidgin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1012632615221-bich4tcg8raoe0bflvictk9ttu09va4f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrUsAUJFpPBw2P7xtw6Vdsu06dXJhqyGI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1012632615221-bich4tcg8raoe0bflvictk9ttu09va4f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
