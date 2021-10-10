@@ -15,10 +15,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // ignore: prefer_const_constructors
-    return MaterialApp(
+    return const MaterialApp(
       title: 'Pidgin',
-      home: const Authentication(),
+      home: Authentication(),
     );
   }
 }
