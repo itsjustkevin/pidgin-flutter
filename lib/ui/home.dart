@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:pidgin/ui/dashboard.dart';
+import 'package:pidgin/ui/language.dart';
+import 'package:pidgin/ui/profile.dart';
 
 class HomeView extends StatefulWidget {
   const HomeView({Key? key}) : super(key: key);
@@ -8,17 +11,19 @@ class HomeView extends StatefulWidget {
 }
 
 class _HomeViewState extends State<HomeView> {
+  int _currentIndex = 0;
+  final screens = [
+    const DashboardView(),
+    const LanguageView(),
+    const ProfileView(),
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        width: MediaQuery.of(context).size.width,
-        height: MediaQuery.of(context).size.height,
-        decoration: const BoxDecoration(color: Colors.white),
-        child: const Center(child: Text("Hello World"),),
-      ),
+      body: screens[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
-        items: const <BottomNavigationBarItem> [
+        items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
             label: "Home",
@@ -32,8 +37,16 @@ class _HomeViewState extends State<HomeView> {
             label: "Profile",
           ),
         ],
+        onTap: onTabTapped,
+        currentIndex: _currentIndex,
         selectedItemColor: Colors.blue,
       ),
     );
+  }
+
+  void onTabTapped(int index) {
+    setState(() {
+      _currentIndex = index;
+    });
   }
 }
