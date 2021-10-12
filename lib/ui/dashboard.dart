@@ -1,6 +1,6 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:firebase_core/firebase_core.dart';
+// import 'package:cloud_firestore/cloud_firestore.dart';
+// import 'package:firebase_core/firebase_core.dart';
 
 class DashboardView extends StatefulWidget {
   const DashboardView({Key? key}) : super(key: key);
@@ -10,8 +10,8 @@ class DashboardView extends StatefulWidget {
 }
 
 class _DashboardViewState extends State<DashboardView> {
-  final Stream<QuerySnapshot> _gamesStream =
-      FirebaseFirestore.instance.collection('games').snapshots();
+  // final Stream<QuerySnapshot> _gamesStream =
+  //     FirebaseFirestore.instance.collection('games').snapshots();
 
   @override
   Widget build(BuildContext context) {
